@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Courses</title>
+    <link rel="icon" href="./logo.png">
+
+    <meta
+      name="viewport"
+      content="width=device-width,height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="./css/all.css"/>
+    <link rel="stylesheet" href="./css/solid.css"/>
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+      />
+
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+        font-size: 62.5%;
+        overflow-x: hidden;
+      }
+
+      *{
+        font-family: 'Roboto', sans-serif;
+        text-transform: capitalize;
+        text-decoration: none;
+        outline: none;
+        margin: 0; padding: 0;
+        box-sizing: border-box;
+    }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        min-height: 100vh;
+        background:  url(bg6.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        z-index: 0;
+        overflow:hidden;
+        position: relative;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      
+      .box1{
+        height: 35rem;
+        width: 50rem;
+        background:white;
+        text-align: center;
+        border-radius: 3rem;
+        box-shadow: 0 .3rem .5rem rgba(0,0,0,.5);
+        position: relative;
+        bottom:50px;
+      }
+
+      .box1 #fai1{
+         height:7rem;
+        width:7rem;
+        line-height: 7rem;
+        text-align: center;
+        border-radius: 50%;
+        color:#fff;
+        background-color: chocolate;
+        font-size: 3rem;
+        margin:2rem 0;
+        transition: .2s;
+        }
+
+     .box1 .t1{
+        font-size: 2rem;
+        color:chocolate;
+        transition: .2s;
+        position: relative;
+        top: 5px;
+        }
+
+    .box-container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: relative;
+        top: 16px;
+    }
+
+    .box2{
+        height: 15rem;
+        width:25%;
+        background:whitesmoke;
+        text-align: center;
+        border-radius: 3rem;
+        margin: 1.5rem;
+        box-shadow: 0 .3rem .5rem rgba(0,0,0,.5);
+    }
+
+    .box2 #fai2{
+        height:5rem;
+        width:5rem;
+        line-height: 5rem;
+        text-align: center;
+        border-radius: 30%;
+        color:#fff;
+        background-color: chocolate;
+        font-size: 2.5rem;
+        margin:5rem 0;
+        transition: .2s;
+        position: relative;
+        bottom: 22px;
+    }
+
+     .box2 .t2{
+        font-size: 80%;
+        color:chocolate;
+        transition: .2s;
+        position: relative;
+        bottom: 52px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    </style>
+  </head>
+
+  <body>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="box1">
+                <i id = "fai1" class="fas fa-fire"></i>
+                <h3 class="t1">COURSE 1</h3>
+            <div class="box-container">
+                <div class="box2">
+                    <i id="fai2" class="fas fa-calendar"></i>
+                    <h3 class="t2">12 WEEKS</h3>
+                </div>
+                <div class="box2">
+                    <i id = "fai2" class="fas fa-circle-info"></i>
+                    <h3 class="t2">SELF-PACED</h3>
+                </div>
+                <div class="box2">
+                    <i id = "fai2" class="fas fa-indian-rupee-sign"></i>
+                    <h3 class="t2">FREE</h3>
+                </div>
+            </div>    
+            </div>
+
+        </div>
+        <div class="swiper-slide">
+            <div class="box1">
+                <i id = "fai1" class="fas fa-fire"></i>
+                <h3 class="t1">COURSE 2</h3>
+            <div class="box-container">
+                <div class="box2">
+                    <i id="fai2" class="fas fa-calendar"></i>
+                    <h3 class="t2">12 WEEKS</h3>
+                </div>
+                <div class="box2">
+                    <i id = "fai2" class="fas fa-circle-info"></i>
+                    <h3 class="t2">SELF-PACED</h3>
+                </div>
+                <div class="box2">
+                    <i id = "fai2" class="fas fa-indian-rupee-sign"></i>
+                    <h3 class="t2">FREE</h3>
+                </div>
+            </div>    
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="box1">
+                <i id = "fai1" class="fas fa-fire"></i>
+                <h3 class="t1">COURSE 3</h3>
+            <div class="box-container">
+                <div class="box2">
+                    <i id="fai2" class="fas fa-calendar"></i>
+                    <h3 class="t2">12 WEEKS</h3>
+                </div>
+                <div class="box2">
+                    <i id = "fai2" class="fas fa-circle-info"></i>
+                    <h3 class="t2">SELF-PACED</h3>
+                </div>
+                <div class="box2">
+                    <i id = "fai2" class="fas fa-indian-rupee-sign"></i>
+                    <h3 class="t2">FREE</h3>
+                </div>
+            </div>    
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="box1">
+                <i id = "fai1" class="fas fa-fire"></i>
+                <h3 class="t1">COURSE 4</h3>
+            <div class="box-container">
+                <div class="box2">
+                    <i id="fai2" class="fas fa-calendar"></i>
+                    <h3 class="t2">12 WEEKS</h3>
+                </div>
+                <div class="box2">
+                    <i id = "fai2" class="fas fa-circle-info"></i>
+                    <h3 class="t2">SELF-PACED</h3>
+                </div>
+                <div class="box2">
+                    <i id = "fai2" class="fas fa-indian-rupee-sign"></i>
+                    <h3 class="t2">FREE</h3>
+                </div>
+            </div>    
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="box1">
+                <i id = "fai1" class="fas fa-fire"></i>
+                <h3 class="t1">COURSE 5</h3>
+            <div class="box-container">
+                <div class="box2">
+                    <i id="fai2" class="fas fa-calendar"></i>
+                    <h3 class="t2">12 WEEKS</h3>
+                </div>
+                <div class="box2">
+                    <i id = "fai2" class="fas fa-circle-info"></i>
+                    <h3 class="t2">SELF-PACED</h3>
+                </div>
+                <div class="box2">
+                    <i id = "fai2" class="fas fa-indian-rupee-sign"></i>
+                    <h3 class="t2">FREE</h3>
+                </div>
+            </div>    
+            </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <audio id="aud" autoplay controls hidden>
+        <source src="./audio/courses.mp3" type="audio/mp3">
+    </audio>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+
+     var swiper = new Swiper(".mySwiper",{
+        slidesPerView: 1,
+        spaceBetween: 30,
+        keyboard: {
+          enabled: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+
+    const co = ["1", "2","3","4","5"]
+    let n = co.length;
+    let l = 0;
+    let p = 0;
+
+    console.log(co.length);
+        
+        window.addEventListener("keydown", function(event) {
+            if (event.key === "ArrowRight") {
+            l = l+1;
+            if (l>=0 && l<=n-1){}
+            else{l = l-1;}
+            }
+
+            if (event.key === "Enter"){
+                p = p+1;
+                if(p === 1){
+                alert("success "+ co[l]);
+                p = 0;
+            }
+        }
+
+            if (event.key === "ArrowLeft") {
+            l = l-1;
+            if (l>=0 && l<=n-1){}
+            else{l = l+1;}
+            }
+    }); 
+    </script>
+
+    <script type="text/javascript" src="./touchcourses.js" type="text/javascript"></script>
+    
+    <script>
+        document.addEventListener('touchstart', Touch.handleTouchStart, false);        
+        document.addEventListener('touchmove', Touch.handleTouchMove, false);
+    </script>
+
+  </body>
+</html>

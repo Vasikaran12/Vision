@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+:root{
+  --pink:#FF046F;
+  --violet:#C63BFA;
+}
+
+*{
+  font-family: 'Roboto', sans-serif;
+  text-transform: capitalize;
+  text-decoration: none;
+  outline: none;
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+}
+
+*::selection{
+  background:var(--pink);
+  color:#fff;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+.heading{
+  font-size: 4rem;
+  color:var(--pink);
+  text-align: center;
+  padding:0 1rem;
+  padding-top: 6rem;
+  letter-spacing: .2rem;
+  font-weight: 500;
+}
+
+.title{
+  padding:0 1rem;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 400;
+  color:#aaa;
+}
+
+.home{
+  min-height: 100vh;
+  background:  url(bg6.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 0;
+  overflow:hidden;
+  position: relative;
+}
+
+.home .content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  padding-top: 14rem;
+  padding-bottom: 8rem;
+  text-align: center;
+  position: relative;
+  bottom: 30px;
+}
+
+.home .content h1{
+  font-size: 5rem;
+  color: chocolate;
+  padding:0 1rem;
+  text-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+.home .content p{
+  font-size: 3rem;
+  padding:1rem 2rem;
+  font-family: cursive;
+  
+}
+
+.home .content input{
+  height:4rem;
+  width:20rem;
+  border-radius: 5rem;
+  background-color: chocolate;
+  color: white;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 2rem;
+  cursor: pointer;
+  border:none;
+  box-shadow: 0 .3rem 1rem rgba(0,0,0,.3);
+  font-weight: 900px;
+  position: relative;
+  top: 50px;
+  align-items: center;
+  text-align: center;
+
+}
+
+::placeholder { 
+  color: white;
+  opacity: 1; 
+}
+
+.home .content button:hover{
+  letter-spacing: .1rem;
+}
+
+.home .box-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+   position: relative;
+  bottom: 30px;
+}
+
+.home .box-container .box{
+  height:20rem;
+  width:30rem;
+  background:#fff;
+  text-align: center;
+  border-radius: 3rem;
+  box-shadow: 0 .3rem .5rem rgba(0,0,0,.5);
+  margin: 4rem;
+  cursor: pointer;
+}
+
+.home .box-container .box i{
+  height:6rem;
+  width:6rem;
+  line-height: 6rem;
+  text-align: center;
+  border-radius: 50%;
+  color:#fff;
+  background-color: chocolate;
+  font-size: 3rem;
+  margin:2rem 0;
+  transition: .2s;
+}
+
+.home .box-container .box h3{
+  font-size: 2rem;
+  color:chocolate;
+  transition: .2s;
+}
+
+.home .box-container .box p{
+  font-size: 1.3rem;
+  padding:.7rem 2rem;
+  color:#666;
+}
+
+
+.home::before{
+  content: '';
+  position: absolute;
+  bottom:-25rem; left:50%;
+  transform: translateX(-50%);
+  border-top: 70vh solid #fff;
+  width:120%;
+  border-radius: 50%;
+  z-index: -1;
+}

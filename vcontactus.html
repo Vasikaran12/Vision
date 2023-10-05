@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+   
+    <link rel="stylesheet" href="vcontactus.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+.homepage{
+  background-color: chocolate;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border-color: chocolate;
+}
+</style>
+   </head>
+<body>
+  <div class="container">
+    <div class="content">
+      <div class="left-side">
+        <div class="address details">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="topic">Address</div>
+          <div class="text-one">Thiagarajar College of Engineering</div>
+          <div class="text-two">Madurai -625015</div>
+        </div>
+        <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+          <div class="topic">Phone</div>
+          <div class="text-one">+91 0452 248 2240</div>
+          <div class="text-two">+91 76673 37401</div>
+        </div>
+        <div class="email details">
+          <i class="fas fa-envelope"></i>
+          <div class="topic">Email</div>
+          <div class="text-one">vasikaran@student.tce.edu</div>
+          <div class="text-two">santhoshkmr@student.tce.edu</div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topic-text">Send us a message</div>
+        <p>We are here for you. If you have any further questions, please let us know.</p>
+      <form action="#">
+        <div class="input-box">
+          <input type="text" id="name"  placeholder="Enter your name">
+        </div>
+        <div class="input-box">
+          <input type="text" id="email" placeholder="Enter your email">
+        </div>
+        <div class="message-box">
+          <input type="text" id="message" placeholder="Enter your message">
+        </div>
+        <div class="button">
+          <input type="button" value="Send Now" >
+        </div>
+      </form>
+
+    </div>
+    </div>
+  </div>
+
+  <script>
+      if (annyang) {
+  // Let's define our first command. First the text we expect, and then the function it should call
+      var commands = {
+          'name *tag': function(variable) {
+              let name = document.getElementById("search");
+              name.value = variable;
+      },
+          'search': function() {
+              alert("success");
+          }
+  };
+
+      // Add our commands to annyang
+      annyang.addCommands(commands);
+
+      // Start listening. You can call this here, or attach this call to an event, button, etc.
+      annyang.start();
+  }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./logo.png">
+    <title>VISION</title>
+        
+    <link rel="stylesheet" href="./css/all.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="index.css">
+
+</head>
+    <body>
+        <section class="home" id="home">
+
+<div class="content">
+    <h1>WELCOME TO VISION</h1>
+    <p>A way to effective learning</p>
+
+<div class="box-container">
+
+    <div class="box">
+        <i class="fa-solid fa-user-graduate"></i>
+        <h3>STUDENT</h3>
+    </div>
+
+    <div class="box">
+        <i class="fa-solid fa-user-tie"></i>
+        <h3>MENTOR</h3>
+    </div>
+   </div>
+</div>
+
+<audio id="aud" autoplay controls hidden>
+    <source src="./audio/login.mp3" type="audio/mp3">
+</audio>
+
+<script>
+
+window.addEventListener("keydown", function(event) {
+    if (event.key === "ArrowRight") {
+    window.open("vmentor.html","_self");
+    }
+
+    if (event.key === "ArrowLeft") {
+    window.open("vhome.html", "_self")
+    }
+});
+</script>
+
+<script type="text/javascript" src="./touchindex.js" type="text/javascript"></script>
+
+<script>
+    document.addEventListener('touchstart', Touch.handleTouchStart, false);        
+    document.addEventListener('touchmove', Touch.handleTouchMove, false);
+</script>
+
+    </body>
+</html>
